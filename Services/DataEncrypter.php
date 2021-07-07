@@ -45,6 +45,7 @@ class DataEncrypter
             MCRYPT_MODE_ECB
         );
 
-        return json_decode($string, true);
+        // Use regex to remove control character to avoid fail on json_decode
+        return json_decode(preg_replace('/[[:cntrl:]]/', '', $string), true);
     }
 }

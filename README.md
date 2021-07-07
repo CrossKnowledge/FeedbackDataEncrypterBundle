@@ -16,14 +16,14 @@ Add the bundle to your project:
 
 "repositories": [
         {
-            "type": "git",
-            "url": "git@gitlab.crossknowledge.com:ip/feedback-data-encrypter-bundle.git"
+            "type": "vcs",
+            "url": "https://github.com/guirod/FeedbackDataEncrypterBundle.git"
         }
     ]
 ```
 
 ```bash
-composer require crossknowledge/feedback-data-encrypter-bundle:dev-master
+composer require crossknowledge/feedback-data-encrypter-bundle:^1.0.0
 ```
 Enable bundle in your kernel:
 ```php
