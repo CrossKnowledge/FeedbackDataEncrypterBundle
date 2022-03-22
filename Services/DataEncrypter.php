@@ -1,8 +1,6 @@
 <?php
 
-
 namespace CrossKnowledge\FeedbackDataEncrypterBundle\Services;
-
 
 class DataEncrypter
 {
@@ -45,6 +43,6 @@ class DataEncrypter
             MCRYPT_MODE_ECB
         );
 
-        return json_decode($string, true);
+        return json_decode(rtrim($string, "\0"), true);
     }
 }
