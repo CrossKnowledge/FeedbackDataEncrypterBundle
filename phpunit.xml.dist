@@ -2,7 +2,9 @@
     <logging>
         <log type="junit" target="logs/unittests/alltests.xml" />
     </logging>
-
+    <php>
+       <ini name="error_reporting" value="E_ALL"/>
+    </php>
     <testsuites>
         <testsuite name="CrossKnowledge DataEncrypter test suite">
             <directory suffix="Test.php">./Tests</directory>
