@@ -4,31 +4,192 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2abc5c53090d77934a3f5a5e734dcfa2",
+    "content-hash": "ee3e2b6dfb9a1114b1c4d4a39cb484f0",
     "packages": [
         {
-            "name": "phpseclib/mcrypt_compat",
-            "version": "1.0.13",
+            "name": "codercat/jwk-to-pem",
+            "version": "1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpseclib/mcrypt_compat.git",
-                "reference": "c1f0014fb7d9af09f35cf10b1e2753094a8e401d"
+                "url": "https://github.com/acodercat/php-jwk-to-pem.git",
+                "reference": "4b3cdcf5f87b9b074f132f763a6b7b82c7d3ff1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/mcrypt_compat/zipball/c1f0014fb7d9af09f35cf10b1e2753094a8e401d",
-                "reference": "c1f0014fb7d9af09f35cf10b1e2753094a8e401d",
+                "url": "https://api.github.com/repos/acodercat/php-jwk-to-pem/zipball/4b3cdcf5f87b9b074f132f763a6b7b82c7d3ff1d",
+                "reference": "4b3cdcf5f87b9b074f132f763a6b7b82c7d3ff1d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "phpseclib/phpseclib": ">=2.0.36 <3.0.0"
+                "php": ">=7.1",
+                "phpseclib/phpseclib": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoderCat\\JWKToPEM\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codercat",
+                    "email": "1067302838@qq.com"
+                }
+            ],
+            "description": "Convert JWK to PEM format.",
+            "support": {
+                "issues": "https://github.com/acodercat/php-jwk-to-pem/issues",
+                "source": "https://github.com/acodercat/php-jwk-to-pem/tree/1.1"
+            },
+            "time": "2021-04-28T07:37:03+00:00"
+        },
+        {
+            "name": "paragonie/constant_time_encoding",
+            "version": "v2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/constant_time_encoding.git",
+                "reference": "52a0d99e69f56b9ec27ace92ba56897fe6993105"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/52a0d99e69f56b9ec27ace92ba56897fe6993105",
+                "reference": "52a0d99e69f56b9ec27ace92ba56897fe6993105",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6|^7|^8|^9",
+                "vimeo/psalm": "^1|^2|^3|^4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParagonIE\\ConstantTime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Steve 'Sc00bz' Thomas",
+                    "email": "steve@tobtu.com",
+                    "homepage": "https://www.tobtu.com",
+                    "role": "Original Developer"
+                }
+            ],
+            "description": "Constant-time Implementations of RFC 4648 Encoding (Base-64, Base-32, Base-16)",
+            "keywords": [
+                "base16",
+                "base32",
+                "base32_decode",
+                "base32_encode",
+                "base64",
+                "base64_decode",
+                "base64_encode",
+                "bin2hex",
+                "encoding",
+                "hex",
+                "hex2bin",
+                "rfc4648"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/constant_time_encoding/issues",
+                "source": "https://github.com/paragonie/constant_time_encoding"
+            },
+            "time": "2024-05-08T12:18:48+00:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "phpseclib/mcrypt_compat",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/mcrypt_compat.git",
+                "reference": "e5924504997b4f90772034cefd89dc2f4ec189dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/mcrypt_compat/zipball/e5924504997b4f90772034cefd89dc2f4ec189dc",
+                "reference": "e5924504997b4f90772034cefd89dc2f4ec189dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.1",
+                "phpseclib/phpseclib": ">=3.0.36 <4.0.0"
             },
             "provide": {
                 "ext-mcrypt": "5.6.40"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0|^9.4"
+                "phpunit/phpunit": "^5.7|^6.0|^9.4"
             },
             "suggest": {
                 "ext-openssl": "Will enable faster cryptographic operations"
@@ -50,37 +211,54 @@
                     "homepage": "http://phpseclib.sourceforge.net"
                 }
             ],
-            "description": "PHP 7.1 polyfill for the mcrypt extension from PHP <= 7.0",
+            "description": "PHP 5.x-8.x polyfill for mcrypt extension",
             "keywords": [
                 "cryptograpy",
                 "encryption",
-                "mcrypt"
+                "mcrypt",
+                "polyfill"
             ],
-            "time": "2022-01-30T10:30:53+00:00"
+            "support": {
+                "email": "terrafrost@php.net",
+                "issues": "https://github.com/phpseclib/mcrypt_compat/issues",
+                "source": "https://github.com/phpseclib/mcrypt_compat"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/mcrypt_compat",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-02-26T14:52:18+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.36",
+            "version": "3.0.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "a97547126396548c224703a267a30af1592be146"
+                "reference": "56483a7de62a6c2a6635e42e93b8a9e25d4f0ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/a97547126396548c224703a267a30af1592be146",
-                "reference": "a97547126396548c224703a267a30af1592be146",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/56483a7de62a6c2a6635e42e93b8a9e25d4f0ec6",
+                "reference": "56483a7de62a6c2a6635e42e93b8a9e25d4f0ec6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "paragonie/constant_time_encoding": "^1|^2|^3",
+                "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
+                "php": ">=5.6.1"
             },
             "require-dev": {
-                "phing/phing": "~2.7",
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0|^9.4",
-                "squizlabs/php_codesniffer": "~2.0"
+                "phpunit/phpunit": "*"
             },
             "suggest": {
+                "ext-dom": "Install the DOM extension to load XML formatted public keys.",
                 "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
                 "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
                 "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
@@ -92,7 +270,7 @@
                     "phpseclib/bootstrap.php"
                 ],
                 "psr-4": {
-                    "phpseclib\\": "phpseclib/"
+                    "phpseclib3\\": "phpseclib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -147,7 +325,25 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2022-01-30T08:48:36+00:00"
+            "support": {
+                "issues": "https://github.com/phpseclib/phpseclib/issues",
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.46"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/terrafrost",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-06-26T16:29:55+00:00"
         },
         {
             "name": "psr/cache",
@@ -3794,5 +3990,5 @@
         "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }
